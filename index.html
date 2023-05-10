@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quotation Random</title>
+</head>
+<body>
+    <h1>JavaScript Quote Generator</h1>
+    <div class="line"></div>
+    <div class="main">
+        <div class="sign">
+            <h1><i>"</i></h1>
+        </div>
+        <div class="quote">
+            <h3 id="quot">
+                --
+            </h3>
+        </div>
+        <div class="author">
+            <h2 id="autho">
+                --
+            </h2>
+        </div>
+        <div class="btn">
+            <button class="btnn" onclick="newQuote()">
+                New Quote
+            </button>
+        </div>
+    </div>
+</body>
+<script>
+    const quotes = [
+        '“If life were predictable it would cease to be life, and be without flavor.”',
+        '“Life is what happens when you are busy making other plans.”',
+        '“When you reach the end of your rope, tie a knot in it and hang on.”',
+        '“Always remember that you are absolutely unique. Just like everyone else.”',
+        '“The way to get started is to quit talking and begin doing.”',
+        '“Make your passion be your profession”',
+    ];
+
+    const author = [
+        'Elanor Roosevelt',
+        'John Lennon',
+        'Franklin D. Roosevelt',
+        'Margaret Mead',
+        'Walt Disney',
+        'Unknown',
+    ];
+
+    function newQuote(){
+        
+
+        let number = Math.floor(6 * Math.random());
+ 
+        let quotation = document.getElementById('quot').textContent = quotes[number];
+        let authors = document.getElementById('autho').textContent = author[number];
+        
+    }
+</script>
+</html>

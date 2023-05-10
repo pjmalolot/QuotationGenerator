@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.line {
+    border-radius: 14px;
+    width: 400px;
+    height: 5px;
+    background: aquamarine;
+    display: flex;
+    margin: 10px auto;
+}
+
+.main {
+    padding: 2rem 3rem;
+    border-radius: 14px;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 50vh;
+    background-color: aqua;
+}
+
+h1 {
+    color:cadetblue;
+}
+
+h3, h2 {
+    text-align: center;
+}
+
+.sign h1 {
+    text-align: center;
+}
+
+.btn {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.btnn {
+    padding: 1em;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.btnn:hover {
+    background-color:aquamarine;
+    cursor: pointer;
+}
+
+.quote {
+    margin-top: 8vh;
+}
+
+.author {
+    margin-top: 6vh;
+}
